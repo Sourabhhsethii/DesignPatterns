@@ -1,4 +1,4 @@
-package com.dxsys.state;
+package com.dxsys.patterns.state;
 
 public enum ToolType {
     SELECTION,

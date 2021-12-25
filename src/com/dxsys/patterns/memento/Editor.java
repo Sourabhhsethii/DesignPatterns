@@ -1,4 +1,4 @@
-package com.dxsys.memento;
+package com.dxsys.patterns.memento;
 
 import java.util.ArrayList;
 import java.util.List;
