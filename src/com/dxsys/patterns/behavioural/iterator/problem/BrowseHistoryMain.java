@@ -1,4 +1,4 @@
-package com.dxsys.patterns.state.iterator.problem;
+package com.dxsys.patterns.behavioural.iterator.problem;
 
 public class BrowseHistoryMain {
     public static void main(String[] args) {

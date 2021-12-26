@@ -1,4 +1,4 @@
-package com.dxsys.patterns.state.question;
+package com.dxsys.patterns.behavioural.state.question;
 
 public enum ToolType {
     SELECTION,

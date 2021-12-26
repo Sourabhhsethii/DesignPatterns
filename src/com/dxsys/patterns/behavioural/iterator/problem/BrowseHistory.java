@@ -1,4 +1,4 @@
-package com.dxsys.patterns.state.iterator.problem;
+package com.dxsys.patterns.behavioural.iterator.problem;
 
 import java.util.ArrayList;
 import java.util.List;

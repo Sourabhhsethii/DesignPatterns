@@ -1,6 +1,6 @@
-package com.dxsys.patterns.state.solution;
+package com.dxsys.patterns.behavioural.state.solution;
 
-import com.dxsys.patterns.state.question.Canvas;
+import com.dxsys.patterns.behavioural.state.question.Canvas;
 
 /**
  * Open Closed Principle

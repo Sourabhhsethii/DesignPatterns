@@ -1,4 +1,4 @@
-package com.dxsys.patterns.state.solution;
+package com.dxsys.patterns.behavioural.state.solution;
 
 public abstract class UIControl {
     public void enable(){

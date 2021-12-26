@@ -1,6 +1,6 @@
-package com.dxsys.patterns.state.question;
+package com.dxsys.patterns.behavioural.state.question;
 
-import com.dxsys.patterns.state.solution.Tool;
+import com.dxsys.patterns.behavioural.state.solution.Tool;
 
 public class Canvas {
 

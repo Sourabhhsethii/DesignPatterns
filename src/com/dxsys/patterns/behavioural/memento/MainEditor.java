@@ -1,4 +1,4 @@
-package com.dxsys.patterns.memento;
+package com.dxsys.patterns.behavioural.memento;
 
 public class MainEditor {
 

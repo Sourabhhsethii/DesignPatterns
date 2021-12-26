@@ -1,4 +1,4 @@
-package com.dxsys.patterns.state.solution.abuse;
+package com.dxsys.patterns.behavioural.state.solution.abuse;
 
 public class StoppedState implements State {
 
