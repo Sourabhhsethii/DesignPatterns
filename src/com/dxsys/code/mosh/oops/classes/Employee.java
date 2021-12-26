@@ -1,9 +1,23 @@
 package com.dxsys.code.mosh.oops.classes;
 
 public class Employee {
+    private static int numberOfEmployee;
     private int baseSalary;
-
     private int hourlyRate;
+
+    public Employee(int baseSalary, int hourlyRate) {
+        setBaseSalary(baseSalary);
+        setHourlyRate(hourlyRate);
+        numberOfEmployee++;
+    }
+
+    public Employee(int baseSalary) {
+       this(baseSalary,0);
+    }
+
+    public static void printNoOfEmployees(){
+        System.out.println(numberOfEmployee);
+    }
 
     private int getBaseSalary() {
         return baseSalary;
@@ -13,8 +27,8 @@ public class Employee {
         return hourlyRate;
     }
 
-    public void setHourlyRate(int hourlyRate) {
-        if(baseSalary<=0){
+    private void setHourlyRate(int hourlyRate) {
+        if(baseSalary<0){
             throw new IllegalArgumentException("Salary Cannot be zero or less");
         }
         this.hourlyRate = hourlyRate;
@@ -25,11 +39,15 @@ public class Employee {
         return baseSalary + (extraHours * hourlyRate);
     }
 
-    public void setBaseSalary(int baseSalary){
+    private void setBaseSalary(int baseSalary){
 
         if(baseSalary<=0){
             throw new IllegalArgumentException("Salary Cannot be zero or less");
         } else this.baseSalary = baseSalary;
 
+    }
+
+    public int calculateWage() {
+        return calculateWage(0);
     }
 }

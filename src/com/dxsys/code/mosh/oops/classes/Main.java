@@ -38,13 +38,11 @@ public class Main {
 
 
         // Easy to maintainable, reusable using encapsulation
- /*       var employee = new Employee();
-        employee.setBaseSalary(500);
-        employee.setHourlyRate(20);
-        int wage = employee.calculateWage(10);
+        var employee = new Employee(50_000);
+        int wage = employee.calculateWage(0);
+        Employee.printNoOfEmployees();
         System.out.println(wage);
 
-*/
 
         var browser = new Browser();
         browser.navigate("");
