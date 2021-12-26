@@ -36,6 +36,14 @@ public class Main {
 
         System.out.println(wage);*/
 
+
+        // Easy to maintainable, reusable using encapsulation
+        var employee = new Employee();
+        employee.baseSalary = 50_000;
+        employee.hourlyRate = 20;
+        int wage = employee.calculateWage(10);
+        System.out.println(wage);
+
     }
 
     // procedural Programming Example
