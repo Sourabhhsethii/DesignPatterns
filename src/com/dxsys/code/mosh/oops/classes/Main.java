@@ -38,12 +38,16 @@ public class Main {
 
 
         // Easy to maintainable, reusable using encapsulation
-        var employee = new Employee();
+ /*       var employee = new Employee();
         employee.setBaseSalary(500);
         employee.setHourlyRate(20);
         int wage = employee.calculateWage(10);
         System.out.println(wage);
 
+*/
+
+        var browser = new Browser();
+        browser.navigate("");
     }
 
     // procedural Programming Example
