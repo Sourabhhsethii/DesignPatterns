@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*var textBox = new TextBox();
+        /* var textBox = new TextBox();
         textBox.setTex("Box 1");
 
         System.out.println(textBox.text.toUpperCase());
@@ -39,8 +39,8 @@ public class Main {
 
         // Easy to maintainable, reusable using encapsulation
         var employee = new Employee();
-        employee.baseSalary = 50_000;
-        employee.hourlyRate = 20;
+        employee.setBaseSalary(500);
+        employee.setHourlyRate(20);
         int wage = employee.calculateWage(10);
         System.out.println(wage);
 
