@@ -80,7 +80,7 @@ public class Main {
         Many Forms -  it allow object to take many forms.
          */
 
-        UIControl[] controls = {new TextBox(), new Checkbox()};
+        UIControl[] controls = { new TextBox(), new Checkbox()};
 
         for(var control: controls){
             control.render();
