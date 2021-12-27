@@ -1,6 +1,4 @@
-package com.dxsys.code.mosh.refactoring.post;
-
-import java.text.NumberFormat;
+package com.dxsys.code.mosh.oops.classes.refactoring.post;
 
 public class MortgageCalculator {
 

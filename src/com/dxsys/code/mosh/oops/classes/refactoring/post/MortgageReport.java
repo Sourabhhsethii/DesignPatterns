@@ -1,4 +1,4 @@
-package com.dxsys.code.mosh.refactoring.post;
+package com.dxsys.code.mosh.oops.classes.refactoring.post;
 
 import java.text.NumberFormat;
 

@@ -1,4 +1,4 @@
-package com.dxsys.code.mosh.refactoring.pre;
+package com.dxsys.code.mosh.oops.classes.refactoring.pre;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
