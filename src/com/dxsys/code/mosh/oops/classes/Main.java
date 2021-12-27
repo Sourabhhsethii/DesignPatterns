@@ -66,12 +66,25 @@ public class Main {
         var textBox = new TextBox();
         show(control);*/
 
-        Point point1 = new Point(1,2);
+/*        Point point1 = new Point(1,2);
         var point2 = new Point(1,2);
 
         System.out.println(point1.equals(point1));
         System.out.println(point1.hashCode());
-        System.out.println(point2.hashCode());
+        System.out.println(point2.hashCode());*/
+
+        /*
+        Poly-Morphism-
+        Poly Means Many & Morphism Means Forms
+
+        Many Forms -  it allow object to take many forms.
+         */
+
+        UIControl[] controls = {new TextBox(), new Checkbox()};
+
+        for(var control: controls){
+            control.render();
+        }
 
     }
 
