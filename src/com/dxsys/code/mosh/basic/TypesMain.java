@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Main {
+public class TypesMain {
 
     public static void main(String[] args) {
 
