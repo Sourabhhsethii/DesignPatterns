@@ -89,7 +89,6 @@ public class ControlFlowMain {
             System.out.println("Hello world " + i);
         }
 
-
         System.out.println("************* While Loops *************");
 
     }
