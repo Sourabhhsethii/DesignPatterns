@@ -6,6 +6,20 @@ public class ControlFlowMain {
 
     public static void main(String[] args) {
 
+        // For Each Loops
+
+        System.out.println("ForEeach: ");
+
+        String[] fruits = {"Apple", "Mongo", "Orange"};
+        for (int k=0;k<fruits.length;k++){
+            System.out.println(fruits[k]);
+        }
+
+        // We can traverse in revser direction as we can do in for loop also we dont have index.
+        for (String str: fruits){
+            System.out.println(str);
+        }
+
         System.out.println(" ************* Comparision Operators *************");
         // Comparision Operators
         int x =1;
@@ -90,6 +104,31 @@ public class ControlFlowMain {
         }
 
         System.out.println("************* While Loops *************");
+
+        int i=0;
+        while (i>0){
+            System.out.println("Hello World Using While Loop" + i);
+            i--;
+        }
+
+        String input = "";
+        Scanner scannerCheck = new Scanner(System.in);
+
+        // While loops are preffered in those sceniors where we dont know how many times loops excuted or in other words termination condition is dynamically in nature.
+
+        while(!input.equalsIgnoreCase("quit")){
+            System.out.println("Input: ");
+            input = scannerCheck.next();
+            System.out.println(input);
+        }
+        // do while are executed atleast once.
+        do{
+            System.out.println("Input: ");
+            input = scannerCheck.next();
+            System.out.println(input);
+        } while (!input.equals("quit"));
+
+
 
     }
 }
