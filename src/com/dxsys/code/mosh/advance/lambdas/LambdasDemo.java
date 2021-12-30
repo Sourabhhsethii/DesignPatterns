@@ -21,10 +21,15 @@ public class LambdasDemo {
         /**
          * lamda Expression
          */
-        greet( (message -> {
-            greet(new ConsolePrinter());
-            System.out.println(prefix + message + suffix);
-        }));
+        greet(message ->
+            System.out.println(prefix + message + suffix)
+        );
+
+        /**
+         * Method Reference.
+         * //Class/Object::method
+         */
+        greet(System.out::println);
     }
 
     // Programing to printer interface
