@@ -14,23 +14,17 @@ public class ExceptionsDemo {
     public static void show()  {
 
         // Handling Checked Exceptions
-        FileReader reader = null;
-        try {
-                reader = new FileReader("file.text"); // Check Exception. Need to be handled before compile time and also know as compile time exception.
+        try(
+                var reader = new FileReader("file.text");
+                var write = new FileReader("file.text");
+        ) {
+                        // Check Exception. Need to be handled before compile time and also know as compile time exception.
                 var value= reader.read();
                 new SimpleDateFormat().parse("");
         } catch (FileNotFoundException ex ) {
             System.out.println(ex.getMessage());
         } catch (IOException | ParseException e) {
             System.out.println("Could Not Read Data");
-        } finally {
-            if(reader!=null) {
-                try {
-                    reader.read();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
 
 
