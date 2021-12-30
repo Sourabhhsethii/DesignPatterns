@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class ControlFlowMain {
 
+    public static final int  testVar;
+
+    static {
+        testVar =0;
+    }
+
+
     public static void main(String[] args) {
 
         // For Each Loops
@@ -130,5 +137,10 @@ public class ControlFlowMain {
 
 
 
+
+    }
+
+   void  test(){
+     // testVar = 10;
     }
 }
