@@ -2,7 +2,7 @@ package com.dxsys.code.mosh.advance.streams;
 
 public class Movie {
 
-    private String title;
+ private String title;
     private int likes;
 
     public Movie(String title, int likes){
@@ -14,5 +14,8 @@ public class Movie {
         return likes;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
 }
