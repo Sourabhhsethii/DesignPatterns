@@ -13,7 +13,6 @@ public class StreamsDemo {
         var stream =Stream.of(List.of(1,2,3),List.of(4,5,6));
            // stream.forEach(list-> System.out.println(list));
 
-
         // Flaten the list of stream to objects;
         // Stream<List<x>> -> Stream<x>
         stream.
@@ -45,6 +44,7 @@ public class StreamsDemo {
                 .count();
 
         System.out.println(count2);*/
+
 
 
     }
