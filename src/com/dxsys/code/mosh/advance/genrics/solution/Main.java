@@ -38,10 +38,10 @@ public class Main {
          Utils.print("Key",2,"value", 4);
          new KeyValuePair("",1);
 
-         User user = new Instrcutor(10);
-         Utils.printUser(new Instrcutor(10));
-         var instrcutors = new GenricList<>();
-        // Utils.printUsers(instrcutors);
+//         User user = new Instrcutor(10);
+//         Utils.printUser(new Instrcutor(10));
+//         var instrcutors = new GenricList<>();
+//        // Utils.printUsers(instrcutors);
 
     }
 }
