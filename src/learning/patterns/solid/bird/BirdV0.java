@@ -4,6 +4,11 @@ package learning.patterns.solid.bird;
    Lets Design a Bird Using SOLID Principle
    It's Violates first SRP principle, It's doing lot of things together.
    Here Bird is responsible for How every bird will perform behaviors.
+
+   Violation of SRP;
+   1.) Multiple if/else
+   2.) Monster Methods
+   3.) Common/Until/ Helper Package -> Doing Multiple things.
  */
 public class BirdV0 {
 
@@ -23,6 +28,9 @@ public class BirdV0 {
 
     public boolean fly() {
 
+        /*
+            Multiple if/else is only for business logic.
+         */
         if(type == "sparrow"){
             return true;
         } else if(type == "crow"){
