@@ -1,4 +1,4 @@
-package learning.patterns.solid.bird;
+package learning.patterns.solid.bird.birdv0;
 
 /*
    Lets Design a Bird Using SOLID Principle
@@ -7,7 +7,7 @@ package learning.patterns.solid.bird;
 
    Violation of SRP;
    1.) Multiple if/else
-   2.) Monster Methods
+   2.) Monster Methods & Monster Class.
    3.) Common/Until/ Helper Package -> Doing Multiple things.
  */
 public class BirdV0 {
@@ -50,5 +50,9 @@ public class BirdV0 {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getType() {
+        return type;
     }
 }
