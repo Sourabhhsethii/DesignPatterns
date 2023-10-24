@@ -1,4 +1,4 @@
-package learning.patterns.solid.bird;
+package learning.patterns.solid.bird.birdv0;
 
 import learning.patterns.solid.bird.birdv0.BirdV0;
 import learning.patterns.solid.bird.birdv1.Bird1;
