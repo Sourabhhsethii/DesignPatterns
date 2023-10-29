@@ -15,12 +15,20 @@ public class IntelligentStudent extends Student implements Cloneable {
         this.psp = psp;
     }
 
+    /**
+     * Copy Constructor calling super method
+     * @param is
+     */
     public IntelligentStudent(IntelligentStudent is){
         super(is);
         this.psp = is.psp;
     }
 
 
+    /**
+     * Clone method is calling copy constructor and return the newly created Object.
+     * @return IntelligentStudent
+     */
     @Override
     public IntelligentStudent clone(){
         return  new IntelligentStudent(this);

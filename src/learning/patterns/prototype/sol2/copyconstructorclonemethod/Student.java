@@ -20,12 +20,19 @@ public class Student implements Cloneable {
         this.name = name;
     }
 
+    /**
+     * Copy Constructor
+     * @param student
+     */
     public Student(Student student){
         this.name = student.name;
         this.rollNumber = student.rollNumber;
     }
 
-
+    /**
+     * clone Method will call copy constuctor & return the Student Object!!!
+     * @return
+     */
     @Override
     public Student clone(){
         return new Student(this);
