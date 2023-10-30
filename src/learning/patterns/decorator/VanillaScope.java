@@ -1,5 +1,8 @@
 package learning.patterns.decorator;
 
+/**
+ * Add on class
+ */
 public class VanillaScope implements IceCream{
 
     IceCream ic;

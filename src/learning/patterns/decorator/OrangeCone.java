@@ -1,5 +1,8 @@
 package learning.patterns.decorator;
 
+/**
+ * Base class
+ */
 public class OrangeCone implements IceCream {
 
     IceCream ic;
