@@ -52,6 +52,7 @@ public class StreamDemo {
 
         movies.stream().filter(m -> m.getLikes() > 10).forEach(System.out::println);
 
+
         /**
          * Slicing the stream
          * limit
