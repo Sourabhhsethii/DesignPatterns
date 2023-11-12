@@ -1,13 +1,10 @@
-package com.dxsys.patterns.behavioural.memento;
+package com.dxsys.patterns.behavioural.nov2023.mememto;
 
-/**
- * Why memento Pattern ?
- * How to undo the state of the application???????
- */
-public class MainEditor {
-
+public class Cli {
     public static void main(String[] args) {
-
+        /**
+         * Store the editor State in History
+         */
         var editor = new Editor();
         var history = new History();
 
@@ -18,8 +15,9 @@ public class MainEditor {
         history.push(editor.createState());
 
         editor.setContent("c");
-        editor.restoreState(history.pop());
-
+        editor.restore(history.pop());
+        editor.restore(history.pop());
+        System.out.println(editor.getContent());
 
 
     }

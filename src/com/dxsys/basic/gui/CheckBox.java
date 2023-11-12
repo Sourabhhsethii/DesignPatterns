@@ -1,6 +1,6 @@
-package com.dxsys.basic;
+package com.dxsys.basic.gui;
 
-public class Chekcbok extends UIControl {
+public class CheckBox extends UIControl {
     @Override
     public void draws() {
         System.out.println(" Drawing a checkbok");

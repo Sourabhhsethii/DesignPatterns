@@ -1,4 +1,4 @@
-package com.dxsys.basic;
+package com.dxsys.basic.gui;
 
 public class Textbox extends UIControl {
 

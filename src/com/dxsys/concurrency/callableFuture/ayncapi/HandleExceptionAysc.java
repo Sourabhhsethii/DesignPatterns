@@ -10,11 +10,16 @@ public class HandleExceptionAysc {
             throw new IllegalStateException();
         });
        try {
-           future.exceptionally((ex)-> 1).get();
+           /**
+            * To get the exception from another Thread, we need to get it from get Method...
+            */
+           /**
+            * If we want to get the default value in case of exception, we can call exceptionally... I don't want to crash the systems
+            */
+           System.out.println(future.exceptionally((ex)-> 1).get());
        } catch ( ExecutionException x){
             x.printStackTrace();
        }
-
         Thread.sleep(3000);
     }
 

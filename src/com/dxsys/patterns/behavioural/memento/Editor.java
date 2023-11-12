@@ -13,18 +13,13 @@ public class Editor {
     public String getContent() {
         return content;
     }
-
     public void setContent(String content) {
         this.content = content;
     }
-
-    public void undo(){
-    }
-
+    public void undo(){}
     public EditorState createState(){
         return new EditorState(content);
     }
-
     public void restoreState(EditorState states){
         content = states.getContent();
     }
