@@ -1,4 +1,4 @@
-package com.dxsys.patterns.behavioural.nov2023.state;
+package com.dxsys.patterns.behavioural.nov2023.state.problem;
 
 /**
  * How you will solve the below example!!!
