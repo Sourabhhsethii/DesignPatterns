@@ -6,5 +6,9 @@ public class Client {
 
         Student s = b.build();
         System.out.println("s->" + s.getName());
+
+        // Or
+        var stud1 = Student.getBuilder().setName("Sourabh").setAge(10).setSchool("123").build();
+        System.out.println(stud1.getAge());
     }
 }
