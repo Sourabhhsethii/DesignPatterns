@@ -19,5 +19,12 @@ public class Main {
         Student student1 = student.clone();
         student1.setRollNumber(30);
         System.out.println(student1);
+
+        MostValuableStudent mostValuableStudent = new MostValuableStudent("Sethi",1,"B",95);
+        System.out.println(mostValuableStudent);
+
+        MostValuableStudent mostValuableStudent1 = mostValuableStudent.clone();
+        mostValuableStudent1.setTestScore(90);
+        System.out.println(mostValuableStudent1);
     }
 }
