@@ -1,4 +1,4 @@
-package dec2023.patterns.prototype;
+package dec2023.patterns.builder;
 
 import java.util.HashMap;
 
@@ -15,7 +15,7 @@ public class ApplicationContext {
         this.envVariables = builder.envVariables;
     }
 
-    public static Builder getBuilder(){
+    public static Builder getBuilder() {
         return new Builder();
     }
 
