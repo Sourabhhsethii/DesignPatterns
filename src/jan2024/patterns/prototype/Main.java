@@ -3,6 +3,11 @@ package jan2024.patterns.prototype;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Copy Constructor + Clone Method + This/Super Usgae
+ * Registry + Prototype
+ * Spring Manage the dependency like this!!!
+ */
 public class Main {
     public static void main(String[] args) {
 
