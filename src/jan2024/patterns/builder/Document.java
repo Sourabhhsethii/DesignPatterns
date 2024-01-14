@@ -24,6 +24,10 @@ public class Document {
         this.name = builder.name;
     }
 
+    /**
+     * getBuilder has the object creation responsibility for builder
+     * @return
+     */
     public static Builder getBuilder(){
         return new Builder();
     }
@@ -35,6 +39,10 @@ public class Document {
         private String name;
         private String docContent;
 
+        /**
+         * build method have Object creation Responsibility!!
+         * @return
+         */
         public Document build(){
             return new Document(this);
         }
