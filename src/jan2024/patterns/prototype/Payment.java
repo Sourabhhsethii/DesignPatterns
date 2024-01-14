@@ -15,6 +15,10 @@ public class Payment extends PaymentEvent implements Cloneable {
         this.paymentId = event.paymentId;
     }
 
+    /**
+     * Clone is Responsible for creation of the Object!!
+     * @return
+     */
     public Payment clone(){
         return new Payment(this);
     }
