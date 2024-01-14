@@ -17,6 +17,10 @@ public class Document {
     public Document() {
     }
 
+    /**
+     * Take the builder as input & initialize all the fields of actual class!!!!!!!!
+     * @param builder
+     */
     Document(Builder builder) {
         this.uuid = builder.uuid;
         this.id = builder.id;
