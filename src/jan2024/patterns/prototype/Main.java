@@ -22,6 +22,9 @@ public class Main {
         System.out.println(clonedPaymentEvent.getBankName());
         System.out.println(clonedPaymentEvent.getPaymentEventId());
 
+        /**
+         * Child Class Also Cloneable VIA Super!!
+         */
         var payment = new Payment("123","IDFC First Bank","Sourabh Test",1);
         register.put(Payment.class,payment);
         Payment paymentCloned = (Payment) register.get(Payment.class);
