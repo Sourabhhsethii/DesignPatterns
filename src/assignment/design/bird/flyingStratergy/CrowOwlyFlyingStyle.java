@@ -1,4 +1,4 @@
-package assignment.design.bird.fly;
+package assignment.design.bird.flyingStratergy;
 
 
 /**

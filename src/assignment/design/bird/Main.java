@@ -5,9 +5,9 @@ import assignment.design.bird.entities.Crow;
 import assignment.design.bird.entities.Parrot;
 import assignment.design.bird.entities.Penguin;
 import assignment.design.bird.factory.BirdCreationFatory;
-import assignment.design.bird.fly.BirdType;
-import assignment.design.bird.fly.CrowOwlyFlyingStyle;
-import assignment.design.bird.fly.ParrotSparrowFlyingStyle;
+import assignment.design.bird.flyingStratergy.BirdType;
+import assignment.design.bird.flyingStratergy.CrowOwlyFlyingStyle;
+import assignment.design.bird.flyingStratergy.ParrotSparrowFlyingStyle;
 
 public class Main {
     public static void main(String[] args) {

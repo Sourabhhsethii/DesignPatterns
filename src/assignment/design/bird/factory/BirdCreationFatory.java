@@ -1,8 +1,8 @@
 package assignment.design.bird.factory;
 
 import assignment.design.bird.entities.*;
-import assignment.design.bird.fly.BirdType;
-import assignment.design.bird.fly.Flying;
+import assignment.design.bird.flyingStratergy.BirdType;
+import assignment.design.bird.flyingStratergy.Flying;
 
 public class BirdCreationFatory {
 
