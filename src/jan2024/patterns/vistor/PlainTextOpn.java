@@ -1,0 +1,13 @@
+package jan2024.patterns.vistor;
+
+public class PlainTextOpn implements Operation{
+    @Override
+    public void apply(HeadingNode heading) {
+        System.out.println("text-heading");
+    }
+
+    @Override
+    public void apply(AnchorNode anchor) {
+        System.out.println("text-anchor");
+    }
+}
