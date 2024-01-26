@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 public class Game {
 
-    DiceService diceService;
-    List<Player> players;
-    int noOFDice;
-    Board board;
+    private DiceService diceService;
+    private List<Player> players = new ArrayList<>();
+    private int noOFDice;
+    private Board board;
 
     public void launchGame(){
 
@@ -27,7 +27,8 @@ public class Game {
 
                             for(int i = 1;i<=numberOfPlayer;i++){
                                 System.out.println("Enter User Name " + i);
-                                String enterUserName = scanner.nextLine();
+                                Scanner sc = new Scanner(System.in);
+                                String enterUserName = sc.nextLine();
 
                                 Player player = new Player(enterUserName,0);
                                 players.add(player);
@@ -56,11 +57,18 @@ public class Game {
                             this.board = new Board(boardSize, snake, ladder);
                             while(true){
                                 for (int player = 0; player<= numberOfPlayer; player++){
-                                    System.out.println("press enter to roll payer : " + player);
-
-                                     int rollNumber = rollDice(noOFDice);
-                                     System.out.println(rollNumber);
-                                     board
+                                    System.out.println("press type to (roll/exit) : " + player);
+                                    Scanner sc = new Scanner(System.in);
+                                    String roll = sc.nextLine();
+                                    if(roll.equalsIgnoreCase("roll")) {
+                                        int rollNumber = rollDice(noOFDice);
+                                        System.out.println(rollNumber);
+                                        this.board = board.makeMove();
+                                        System.out.println();
+                                    }
+                                    else if(roll.equalsIgnoreCase("exit")) {
+                                            return;
+                                        }
                                 }
                             }
 
@@ -78,12 +86,20 @@ public class Game {
 
     private List<BoardEntity> getSnakes(int boardSize, int noOfSnakes){
         int boardNumbers = boardSize * boardSize;
-        for (int )
+        List<BoardEntity> snakes = new ArrayList<>();
+        for (int i=0;i<noOfSnakes;i++){
+
+        }
+        return snakes;
     }
 
     private List<BoardEntity> getLadders(int boardSize, int noOfLadder){
         int boardNumbers = boardSize * boardSize;
-        for (int )
+        List<BoardEntity> ladders = new ArrayList<>();
+        for (int i=0;i<noOfLadder;i++){
+
+        }
+        return ladders;
     }
 
 }
