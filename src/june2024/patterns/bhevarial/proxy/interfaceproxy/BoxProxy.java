@@ -1,4 +1,4 @@
-package june2024.patterns.bhevarial.interfaceproxy;
+package june2024.patterns.bhevarial.proxy.interfaceproxy;
 
 public class BoxProxy implements Box{
     @Override

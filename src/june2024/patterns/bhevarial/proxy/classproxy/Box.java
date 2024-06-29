@@ -1,4 +1,4 @@
-package june2024.patterns.bhevarial.classproxy;
+package june2024.patterns.bhevarial.proxy.classproxy;
 
 public class Box {
     int colour;
