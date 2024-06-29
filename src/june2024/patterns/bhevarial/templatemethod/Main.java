@@ -7,7 +7,6 @@ public class Main {
         callDb.setConnectionUrl( "MySQL://localhost");
         callDb.setDriverUrl(" MySQL");
         callDb.setQuery(" select * from table x -> ");
-
         callDb.callDb();
 
     }
