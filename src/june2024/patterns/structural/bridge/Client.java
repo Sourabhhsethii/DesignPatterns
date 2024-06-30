@@ -25,6 +25,8 @@ public class Client {
         System.out.println(remote);
 
         Device device2 = new Radio();
+        Remote remote2 = new Remote(device2);
         System.out.println(device2);
+        System.out.println(remote2);
     }
 }
