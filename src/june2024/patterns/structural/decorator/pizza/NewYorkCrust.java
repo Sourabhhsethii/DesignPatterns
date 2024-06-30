@@ -1,10 +1,13 @@
-package june2024.patterns.bhevarial.decorator.pizza;
+package june2024.patterns.structural.decorator.pizza;
 
-public class DefaultVeggies extends Ingredient {
+public class NewYorkCrust extends Ingredient {
 
     Ingredient ingredient;
 
-    public DefaultVeggies(Ingredient ingredient) {
+    public NewYorkCrust(){
+    }
+
+    public NewYorkCrust(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
 
@@ -13,9 +16,9 @@ public class DefaultVeggies extends Ingredient {
     String getDesc() {
         String text = "";
         if(ingredient != null) {
-            text = ingredient.getDesc() + " + Added DefaultVeggies on top of it " ;
+            text = ingredient.getDesc() + " + Added NewYorkCrust " ;
         } else {
-            text = "Added Cheese";
+            text = "Added NewYorkCrust";
         }
         return text;
     }
@@ -24,19 +27,17 @@ public class DefaultVeggies extends Ingredient {
     Integer getCost() {
         Integer cost =  0;
         if(ingredient != null) {
-            cost = ingredient.getCost() + 5 ;
+            cost = ingredient.getCost() + 20 ;
         } else {
-            cost = 5;
+            cost = 20;
         }
         return cost;
     }
 
     @Override
     public String toString() {
-        return "Cheese{" +
+        return "NewYorkCrust{" +
                 "ingredient=" + ingredient +
                 '}';
     }
-
-
 }

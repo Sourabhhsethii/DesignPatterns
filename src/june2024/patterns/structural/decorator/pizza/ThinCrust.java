@@ -1,13 +1,13 @@
-package june2024.patterns.bhevarial.decorator.pizza;
+package june2024.patterns.structural.decorator.pizza;
 
-public class NewYorkCrust extends Ingredient {
+public class ThinCrust extends Ingredient {
 
     Ingredient ingredient;
 
-    public NewYorkCrust(){
+    public ThinCrust(){
     }
 
-    public NewYorkCrust(Ingredient ingredient) {
+    public ThinCrust(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
 
@@ -16,9 +16,9 @@ public class NewYorkCrust extends Ingredient {
     String getDesc() {
         String text = "";
         if(ingredient != null) {
-            text = ingredient.getDesc() + " + Added NewYorkCrust " ;
+            text = ingredient.getDesc() + " + Added ThinCrust " ;
         } else {
-            text = "Added NewYorkCrust";
+            text = "Added ThinCrust";
         }
         return text;
     }
@@ -27,16 +27,16 @@ public class NewYorkCrust extends Ingredient {
     Integer getCost() {
         Integer cost =  0;
         if(ingredient != null) {
-            cost = ingredient.getCost() + 20 ;
+            cost = ingredient.getCost() + 10 ;
         } else {
-            cost = 20;
+            cost = 10;
         }
         return cost;
     }
 
     @Override
     public String toString() {
-        return "NewYorkCrust{" +
+        return "ThinCrust{" +
                 "ingredient=" + ingredient +
                 '}';
     }

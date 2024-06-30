@@ -1,8 +1,6 @@
-package june2024.patterns.bhevarial.decorator.stream;
+package june2024.patterns.structural.decorator.stream;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 public class Cli {
     public static void main(String[] args) throws FileNotFoundException {

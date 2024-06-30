@@ -1,10 +1,10 @@
-package june2024.patterns.bhevarial.decorator.pizza;
+package june2024.patterns.structural.decorator.pizza;
 
-public class SaltAndPepper extends Ingredient {
+public class DefaultVeggies extends Ingredient {
 
     Ingredient ingredient;
 
-    public SaltAndPepper(Ingredient ingredient) {
+    public DefaultVeggies(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
 
@@ -13,9 +13,9 @@ public class SaltAndPepper extends Ingredient {
     String getDesc() {
         String text = "";
         if(ingredient != null) {
-            text = ingredient.getDesc() + " + Added SaltAndPepper on top of it " ;
+            text = ingredient.getDesc() + " + Added DefaultVeggies on top of it " ;
         } else {
-            text = "Added SaltAndPepper";
+            text = "Added Cheese";
         }
         return text;
     }
@@ -37,5 +37,6 @@ public class SaltAndPepper extends Ingredient {
                 "ingredient=" + ingredient +
                 '}';
     }
+
 
 }

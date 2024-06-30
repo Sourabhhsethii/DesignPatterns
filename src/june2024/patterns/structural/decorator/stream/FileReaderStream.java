@@ -1,6 +1,4 @@
-package june2024.patterns.bhevarial.decorator.stream;
-
-import java.io.FileOutputStream;
+package june2024.patterns.structural.decorator.stream;
 
 public class FileReaderStream extends BaseStream {
 

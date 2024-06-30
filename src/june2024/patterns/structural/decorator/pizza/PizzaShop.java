@@ -1,4 +1,4 @@
-package june2024.patterns.bhevarial.decorator.pizza;
+package june2024.patterns.structural.decorator.pizza;
 
 public class PizzaShop {
 

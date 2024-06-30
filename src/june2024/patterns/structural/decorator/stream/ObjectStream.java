@@ -1,4 +1,4 @@
-package june2024.patterns.bhevarial.decorator.stream;
+package june2024.patterns.structural.decorator.stream;
 
 public class ObjectStream extends BaseStream {
     BaseStream baseStream;
