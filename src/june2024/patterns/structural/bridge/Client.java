@@ -26,6 +26,9 @@ public class Client {
 
         Device device2 = new Radio();
         Remote remote2 = new Remote(device2);
+        remote2.togglePower();
+        remote2.channelUp(10);
+        remote2.volumeUp(20);
         System.out.println(device2);
         System.out.println(remote2);
     }
