@@ -1,4 +1,4 @@
-package june2024.patterns.bhevarial.proxy.classproxy;
+package june2024.patterns.structural.proxy.classproxy;
 
 public class Client {
     public static void main(String[] args) {
