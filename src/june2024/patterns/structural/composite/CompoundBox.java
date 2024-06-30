@@ -6,9 +6,10 @@ import java.util.List;
 public class CompoundBox extends BaseBox {
 
     protected List<Box> subpackage = new ArrayList<>();
-    CompoundBox( Box box, int... x) {
-        super(x[0], x[1]);
-        subpackage.add(box);
+    CompoundBox(int x, int y, Box... box) {
+        super(1,2);
+        for(var b: box)
+        subpackage.add(b);
     }
 
     @Override
