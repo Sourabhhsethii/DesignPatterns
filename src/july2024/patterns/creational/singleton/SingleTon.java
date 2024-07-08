@@ -1,8 +1,9 @@
-package july2024.patterns.creational;
+package july2024.patterns.creational.singleton;
 
-import java.util.concurrent.locks.ReentrantLock;
+import java.io.Serializable;
+import java.util.Objects;
 
-public class SingleTon {
+public class SingleTon implements Serializable, Cloneable {
 
     private static SingleTon singleTon = null;
     private static Object object = new Object();
@@ -10,23 +11,18 @@ public class SingleTon {
     private Integer b;
 
 
-    public static void main(String[] args) {
-       var test =  SingleTon.getInstance();
-       test.hello(1,2);
+    private SingleTon() {
 
-        System.out.println(test.getA());
-
+        if(singleTon != null){
+            throw new IllegalStateException("Cant create object");
+        }
     }
 
-    private SingleTon(){
-
-    }
-
-    public static SingleTon getInstance(){
+    public static SingleTon getInstance() {
         if(singleTon == null){
             synchronized (object){
                 if(singleTon == null){
-                    return new SingleTon();
+                    singleTon = new SingleTon();
                 }
             }
         }
@@ -44,5 +40,13 @@ public class SingleTon {
 
     public Integer getB() {
         return b;
+    }
+
+    public Object readResolve(){
+        return singleTon;
+    }
+
+    public SingleTon clone(){
+        return singleTon;
     }
 }
