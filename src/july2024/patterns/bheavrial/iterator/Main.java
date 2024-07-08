@@ -42,5 +42,13 @@ public class Main {
             System.out.println(itr2.next());
         }
 
+
+        java.util.ArrayList<Integer> int3 = new java.util.ArrayList<>();
+        int3.add(1);
+        java.util.Iterator itr0 = int3.iterator();
+
+        while (itr0.hasNext()){
+            System.out.println( itr0.next());
+        }
     }
 }
